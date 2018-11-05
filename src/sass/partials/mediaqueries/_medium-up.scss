@@ -1,0 +1,8 @@
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    .r {
+        @include rows($row-medium-up-width, $row-medium-up-border);
+    }
+
+    @include fonts($headers-medium-up);
+ }

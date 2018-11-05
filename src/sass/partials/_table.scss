@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    color:#2b2b51;
+}
+
+
+th {
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 20px;
+    text-align: left;
+}
+
+td {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+
+    a {
+        color:#2b2b51;
+    }
+}
+
+th:not(:last-child), td:not(:last-child) {
+    border-right: 1px solid gray;
+}
+
+th:first-child, td:first-child {
+    padding: 0px 20px 0px 0px;
+}
+
+th:last-child, td:last-child {
+    padding: 0px 0px 0px 20px;
+}

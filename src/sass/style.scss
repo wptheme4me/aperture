@@ -1,0 +1,12 @@
+//variable file should come first to be able to use in other files
+// @import 'normalize';
+@import 'partials/colors';
+@import 'partials/config';
+@import 'partials/grid';
+@import 'partials/fonts';
+@import 'partials/aligments';
+@import 'partials/form';
+@import 'partials/table';
+@import 'partials/media';
+@import 'partials/project-specific';
+@import 'partials/mediaqueries';

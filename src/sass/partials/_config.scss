@@ -1,0 +1,53 @@
+// Default font
+$font-family: 'Dosis', sans-serif;
+
+//default row with
+$row-small-width: 96%; $row-small-border: red;
+$row-medium-width: 96%; $row-medium-border: green; 
+$row-medium-up-width: 90%; $row-medium-up-border: blue;
+$row-large-width: 90%; $row-large-border: maroon;
+$row-large-up-width: 80%; $row-large-up-border: pink;
+
+//columns
+$columns-border: none; 
+$columns-float: left;
+
+$img-border: none;
+
+//Resets
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%; //for header to fill viewport
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height:100%;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    color: $text-main-color;
+    line-height: 150%;
+    // background: $body-color url("../img/fonas-1.png") right -100px top 200px repeat-y;
+    background: $body-color;
+}
+
+// Mixins
+@mixin rows($row-width, $border-color) {
+    width: $row-width; 
+    // true/false: show/hide borders
+    @if false { border:1px solid $border-color; }
+}
+
+@mixin fonts($screen-size) {
+  @each $header, $size in $screen-size {
+    #{$header} { 
+      font-size: nth($size, 1);
+      margin-bottom: nth($size, 2);
+    }
+  }
+}

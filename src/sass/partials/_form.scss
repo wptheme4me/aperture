@@ -1,0 +1,105 @@
+#forma {
+	padding: 40px 0 0 0;
+}
+
+form {
+    display: block;
+	width: 100%;
+}
+
+input {
+	display: block;
+    box-sizing: border-box;
+    border:1px solid gray;
+	height: 2rem;
+	width: 100%;
+	margin-bottom: 20px;
+
+	&.redline {
+		border: 1px solid red;
+		background-color: rgba(255, 0, 0, 0.24);
+	}
+	
+	&.greenline {
+		border: 1px solid green;
+		background-color: rgba(0, 128, 0, 0.137);
+	}
+	
+}
+
+input[type='radio'] {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 20px;
+}
+
+input[type='radio'] + label {
+	display: inline-block;
+	position: relative;
+	top: -4px;
+}
+
+input[type='submit'] {
+	// background-color: #ce013a;
+	background-color: #C5D671;
+	border: none;
+	color: white;
+	text-align: center;
+	// padding: 20px 20px 20px 20px;
+	font-size: 1.25rem;
+	height: 60px;
+}
+
+
+fieldset {
+	display: block;
+	padding: 20px;
+	margin: 20px 0 40px 0;
+	border:1px solid rgba(128, 128, 128, 0.185);
+}
+
+legend {
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: $title-color;
+}
+
+label {
+	color: $title-color;
+	font-weight: 800;
+}
+
+.notshow {
+	display: none;
+}
+
+input:focus:invalid {
+	background: #fff url('../img/ne.png') no-repeat 99% center;
+	/* background: #fff url(images/invalid.png) no-repeat 98% center; */
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535;
+}
+
+input:required:valid { /* when a field is considered valid by the browser */
+	background: rgba(40, 147, 31, 0.129) url('../img/taip.png') no-repeat 99% center;
+	border-color: #28921f;
+}
+
+/* naudoti id:before { content: 'Įvestkite tą ir aną'} tooltips parodyti */
+.tooltip {
+	display: none;
+	position: relative;
+}
+
+input:focus + .tooltip {
+	background: #d88e00;
+	color: white;
+	top: -20px;
+	left: 0px;
+	content: ' ';
+	display: block;
+	position: relative;
+	padding: 4px 8px;
+}

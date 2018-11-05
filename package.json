@@ -1,0 +1,32 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run -s security-check && npm run -s dev",
+    "dev": "node dev",
+    "security-check": "nsp check",
+    "prod": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jstransformer-pug": "^0.3.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-autoprefixer": "^1.1.2",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-html-minifier": "^3.0.0",
+    "metalsmith-ignore": "^1.0.0",
+    "metalsmith-layouts": "^2.2.0",
+    "metalsmith-markdown": "^1.0.1",
+    "metalsmith-robots": "^1.1.0",
+    "metalsmith-sass": "^1.5.1",
+    "metalsmith-sitemap": "^1.2.2",
+    "metalsmith-uglify": "^2.3.2"
+  },
+  "devDependencies": {
+    "metalsmith-browser-sync": "^1.1.1"
+  }
+}

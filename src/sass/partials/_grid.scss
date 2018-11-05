@@ -1,0 +1,40 @@
+.r {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto; //horizontally center
+    padding: 40px 0;
+    background: $row-background-color;
+    height: auto;
+}
+
+// clearfix for floating http://nicolasgallagher.com/micro-clearfix-hack/
+.r:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.c0, .c1, .c2, .c25, .c3, .c4, .c5, .c6, .c7, .c75, .c8, .c9 {
+    position: relative;
+    box-sizing: border-box;
+    float: $columns-float;
+    border: $columns-border;
+    background: $column-background-color;
+    margin: 0px; //is not calculated in box-sizing model
+    height: auto;
+    padding: 5px;
+}
+
+.c0 { width: 100%;}
+.c1 { width: 10%; }
+.c2 { width: 20%; }
+.c25 { width: 25%; }
+.c3 { width: 33.3%; }
+.c4 { width: 40%; }
+.c5 { width: 50%; }
+.c6 { width: 60%; }
+.c7 { width: 70%; }
+.c75 { width: 75%; }
+.c8 { width: 80%; }
+.c9 { width: 90%; }

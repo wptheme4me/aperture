@@ -16,6 +16,7 @@ metalsmith(__dirname)
   .metadata({
     sitename: config.site_title,
     siteurl: config.prod_siteurl,
+    style_sheet: config.style_sheet,
     googleanalytics: config.google_analytics_key
   })
   .source('src')

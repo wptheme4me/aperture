@@ -17,7 +17,8 @@ metalsmith(__dirname)
     sitename: config.site_title,
     siteurl: config.prod_siteurl,
     style_sheet: config.style_sheet,
-    googleanalytics: config.google_analytics_key
+    googleanalytics: config.google_analytics_key,
+    facebook_appid: config.facebook_appid
   })
   .source('src')
   .destination('build')

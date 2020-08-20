@@ -80,6 +80,12 @@ a {
   &:hover, &:focus {
     color: $a-hover-color;
   }
+  
+  &.h {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-right: 20px;
+  }
     
   img { border: 0; }
 }
@@ -89,6 +95,5 @@ ul {
 
   li {
     margin: 10px 0;
-    cursor: pointer;
   }
 }

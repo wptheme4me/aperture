@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        //- sitename from metadata in metalsmith
+        //- title from *.md file
+        title #{sitename}
+        include ./tools/google-analytics.pug
+        include ./tools/facebook-ograph.pug
+        include ./tools/favicon.pug
+        link(href="https://fonts.googleapis.com/css?family=Dosis&amp;subset=latin-ext" rel="stylesheet")
+        link(rel="stylesheet", href=siteurl + style_sheet)
+        
+    body
+    
+      block header
+       include ./partials/header.pug
+
+      block main
+       include ./partials/portretai.pug
+       
+      block footer
+       include ./partials/footer.pug
+       

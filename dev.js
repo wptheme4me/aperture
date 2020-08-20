@@ -26,17 +26,17 @@ metalsmith(__dirname)
   .destination('build')
   .clean(true)
   .use(markdown())
-  .use(collections({  // Used for navigation purposes
-    default: {
-      pattern: 'default/**/*.md',
-      refer: false, // skip adding the "next" and "previous" links to your articles
-      // sortBy: 'title',
-      // reverse: true
-    }
-  }))
+  // .use(collections({  // Used for navigation purposes
+  //   default: {
+  //     pattern: '**/*.md',
+  //     refer: false, // skip adding the "next" and "previous" links to your articles
+  //     // sortBy: 'title',
+  //     // reverse: true
+  //   }
+  // }))
   // .use( function(files, ms, done){
-  //  // console.log(ms._metadata.collections.lektorius[0].contents.toString())
-  //   console.log('files', files)
+  //   console.log(ms._metadata.collections)
+  //   //console.log('files', files)
   //   done()
   // })
   .use(layouts({

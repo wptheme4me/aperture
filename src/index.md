@@ -1,4 +1,4 @@
 ---
-title: 'index.md'
-layout: default.pug
+title: 'Portretai'
+layout: portretai.pug
 ---

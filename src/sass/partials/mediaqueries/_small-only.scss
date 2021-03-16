@@ -31,4 +31,19 @@
 
    @include fonts($headers-small);
 
+    //navigacija mobiliam
+    .navigacija {
+        .h {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            border: 1px solid rgb(209, 209, 209);
+            padding: 20px 20px 20px 20px;
+        }
+
+    }
+
 }

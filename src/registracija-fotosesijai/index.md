@@ -1,4 +1,4 @@
 ---
-title: 'registracija-fotosesijai.md'
+title: 'Registracija fotosesijai fotostudijoje Vilniuje'
 layout: registracija.pug
 ---
